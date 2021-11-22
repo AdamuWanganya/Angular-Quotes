@@ -4,7 +4,7 @@
     <div *ngFor='let quote of quotes; let i = index'>
         <li> {{quote.name}}</li>
         <button (click)='toggleDetails(i)'>Show More</button>
-        <app-quote-author *ngIf='quote.showAuthor' [quote]='quote'></app-quote-author>
+        <app-quote-author *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-author>
     </div>
 </ul>
 <p *ngIf='quotes.length>5'>Your quotes are too many</p>

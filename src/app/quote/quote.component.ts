@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes:Quote[] = [
+  quotes: Quote[] = [
     {id:1, name:'Live as if you were to die tomorrow. Learn as if you were to live forever.',author:'- Mahatma Gandhi'},
     {id:2, name: 'Be yourself; everyone else is already taken.',author:'― Oscar Wilde'},
     {id:3, name: 'Be the change that you wish to see in the world.',author:'― Mahatma Gandhi'},
@@ -20,7 +20,7 @@ export class QuoteComponent implements OnInit {
  
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

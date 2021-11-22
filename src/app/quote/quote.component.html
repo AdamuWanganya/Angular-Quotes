@@ -1,10 +1,20 @@
-<h1> Best Life Quotes</h1>
-<hr>
-<ul>
-    <div *ngFor='let quote of quotes;let i = index'>
-        <li appHighlight>{{quote.name}} Posted date: {{quote.completeDate|date|uppercase}}</li>
-        <button (click)='toggleDetails(i)'>Show More</button>
-        <app-quote-author *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-author>
+<div class="container">
+    <h1> Best Life Quotes</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <ul>
+                <div *ngFor='let quote of quotes;let i = index'>
+                    <li appHighlight>{{quote.name}} Posted date: {{quote.completeDate|date|uppercase}}</li>
+                    <button (click)='toggleDetails(i)'>Show More</button>
+                    <app-quote-author *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-author>
+                </div>
+            </ul>
+            <p *ngIf='quotes.length>5'>Your quotes are too many</p>
+        </div>
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
     </div>
-</ul>
-<p *ngIf='quotes.length>5'>Your quotes are too many</p>
+</div>

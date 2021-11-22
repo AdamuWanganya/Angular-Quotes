@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteAuthorComponent } from './quote-author/quote-author.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteAuthorComponent
+    QuoteAuthorComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

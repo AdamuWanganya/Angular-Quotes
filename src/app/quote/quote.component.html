@@ -1,8 +1,8 @@
 <h1> Best Life Quotes</h1>
 <hr>
 <ul>
-    <div *ngFor='let quote of quotes; let i = index'>
-        <li> {{quote.name}}</li>
+    <div *ngFor='let quote of quotes;let i = index'>
+        <li appHighlight>{{quote.name}} Posted date: {{quote.completeDate|date|uppercase}}</li>
         <button (click)='toggleDetails(i)'>Show More</button>
         <app-quote-author *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-author>
     </div>

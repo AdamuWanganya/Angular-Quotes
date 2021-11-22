@@ -17,6 +17,10 @@ export class QuoteComponent implements OnInit {
     new Quote(6, 'The opposite of love is not hate, it is indifference.','― Elie Wiesel'),
 
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
  
   constructor() { }
 

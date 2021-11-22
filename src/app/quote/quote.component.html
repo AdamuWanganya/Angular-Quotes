@@ -1,5 +1,8 @@
 <div class="container">
     <h1> Best Life Quotes</h1>
+    <marquee>
+        <h6 style="color: yellowgreen;">Welcome to best motivation and inspiration quotes </h6>
+    </marquee>
     <hr>
 
     <div class="row">
@@ -7,7 +10,7 @@
             <ul>
                 <div *ngFor='let quote of quotes;let i = index'>
                     <li appHighlight>{{quote.name}} Posted date: {{quote.completeDate|date|uppercase}}</li>
-                    <button (click)='toggleDetails(i)'>Show More</button>
+                    <button (click)='toggleDetails(i)' class="btn btn-info">Show More</button>
                     <app-quote-author *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-author>
                 </div>
             </ul>
@@ -17,4 +20,9 @@
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
     </div>
+    <footer class="bottom">
+        <p>Design</p>
+        &copy;2021 by Adamu Hassan
+    </footer>
+
 </div>

@@ -11,3 +11,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
 }
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: yellow !important;
+}
+
+.bottom {
+    text-align: center;
+}

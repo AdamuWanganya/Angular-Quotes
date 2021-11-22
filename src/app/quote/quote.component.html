@@ -2,9 +2,18 @@
     <h1>Best Life Quotes</h1>
     <hr>
     <ul>
+        <div *ngFor='let quote of quotes;let i = index'>
+            <li>{{quote.name}}</li>
+            <button (click)='toggleDetails(i)'>Show More</button>
+            <app-quote-author *ngIf='goal.showAuthor' [quote]='quote'></app-quote-author>
+    </ul>
+
+    <!--
+    <ul>
         <li *ngFor='let quote of quotes'>
             {{quote.name}}
             <app-quote-author [quote]='quote'></app-quote-author>
         </li>
-    </ul>
-</div>
+    </ul> -->
+    <p *ngIf='quotes.length >5'>Your quotes are too many</p>
+    </div>

@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    {id:1, name:'Live as if you were to die tomorrow. Learn as if you were to live forever.',author:'- Mahatma Gandhi'},
-    {id:2, name: 'Be yourself; everyone else is already taken.',author:'― Oscar Wilde'},
-    {id:3, name: 'Be the change that you wish to see in the world.',author:'― Mahatma Gandhi'},
-    {id:4, name: 'Learn as if you were to live forever.',author:'― Mahatma Gandhi'},
-    {id:5, name: 'We accept the love we think we deserve.',author:'- inspirational love'},
-    {id:6, name: 'The opposite of love is not hate, it is indifference.',author:'― Elie Wiesel'},
+    new Quote(1, 'Live as if you were to die tomorrow. Learn as if you were to live forever.','- Mahatma Gandhi'),
+    new Quote(2, 'Be yourself; everyone else is already taken.','― Oscar Wilde'),
+    new Quote(3, 'Be the change that you wish to see in the world.','― Mahatma Gandhi'),
+    new Quote(4, 'Learn as if you were to live forever.','― Mahatma Gandhi'),
+    new Quote(5, 'We accept the love we think we deserve.','- inspirational love'),
+    new Quote(6, 'The opposite of love is not hate, it is indifference.','― Elie Wiesel'),
 
   ];
  

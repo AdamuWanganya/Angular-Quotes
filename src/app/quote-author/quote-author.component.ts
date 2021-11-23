@@ -14,6 +14,16 @@ export class QuoteAuthorComponent implements OnInit {
   quoteComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  
+   numberOfLikes : number = 0;
+numberOfDislikes: number = 0;
+likeButtonClick() {
+this.numberOfLikes ++;
+}
+dislikeButtonClick(){
+this.numberOfDislikes ++;
+} 
+  
   constructor() { }
 
   ngOnInit() {

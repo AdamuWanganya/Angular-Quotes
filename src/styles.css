@@ -1,25 +1,30 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-image: url(assets/blue.jpeg);
-    color: white;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-}
-
-h1 {
-    text-align: center;
-}
-
-h3 {
-    color: yellow !important;
-}
-
-.bottom {
-    text-align: center;
-}
+                @import "~bootstrap/dist/css/bootstrap.css";
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    background-image: url(assets/blue.jpeg);
+                    color: white;
+                }
+                
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    line-height: 1.4;
+                }
+                
+                h1 {
+                    text-align: center;
+                }
+                
+                h3 {
+                    color: yellow !important;
+                }
+                
+                .bottom {
+                    text-align: center;
+                }
+                
+                .show {
+                    color: white;
+                    ;
+                }
